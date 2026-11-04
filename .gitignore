@@ -1,0 +1,38 @@
+# ------------------------------------------------------------------
+# CONFIDENTIAL: Dekati company data. Never commit anything under data/.
+# This covers raw files, extracted text, chunks, vectors, indexes and
+# evaluation results (which contain company text).
+# ------------------------------------------------------------------
+data/
+
+# Personal documents kept next to the code (not part of the software)
+*.pptx
+Initial_Report*.pdf
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Pipeline temporary files
+*.building*
+*.tmp
+
+# LaTeX build output (the final PDF thesis/main.pdf is kept)
+thesis/build/
+thesis/*.aux
+thesis/*.log
+thesis/*.fls
+thesis/*.fdb_latexmk
+
+# Local tool settings
+.claude/settings.local.json
+
+# macOS
+.DS_Store
+
+# Not published: thesis, evaluation files and assistant settings
+thesis/
+evaluation/
+CLAUDE.md
+.claude/

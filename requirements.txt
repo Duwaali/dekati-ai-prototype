@@ -1,0 +1,29 @@
+# Python 3.11 (tested in the conda environment "dekati-ai")
+# Install: pip install -r requirements.txt
+
+# --- embedding, search and answers ---
+sentence-transformers==6.1.0
+transformers==5.17.0
+torch==2.5.1
+faiss-cpu==1.12.0
+numpy==1.26.4
+ijson==3.5.1
+requests==2.32.4
+
+# --- readers (only needed to re-extract documents from raw files) ---
+PyMuPDF==1.28.0
+pdfplumber==0.11.10
+python-docx==1.2.0
+openpyxl==3.1.5
+python-pptx==1.0.2
+extract-msg==0.56.1
+beautifulsoup4==4.15.0
+lxml==6.1.1
+pytesseract==0.3.13
+Pillow==12.3.0
+
+# Not installed with pip:
+#   Ollama            https://ollama.com   then:  ollama pull llama3.2:3b
+#   Tesseract OCR     brew install tesseract tesseract-lang   (only for re-running OCR)
+# Models downloaded automatically on first run:
+#   sentence-transformers/all-MiniLM-L6-v2, intfloat/multilingual-e5-small
